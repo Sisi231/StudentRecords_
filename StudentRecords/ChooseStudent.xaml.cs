@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace StudentRecords.Properties
+namespace StudentRecords
 {
     /// <summary>
-    /// Interaction logic for Opening.xaml
+    /// Interaction logic for ChooseStudent.xaml
     /// </summary>
-    public partial class Opening : Window
+    public partial class ChooseStudent : Window
     {
-        public Opening()
+        public ChooseStudent()
         {
             InitializeComponent();
         }

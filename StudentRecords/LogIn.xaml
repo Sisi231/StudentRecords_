@@ -6,21 +6,25 @@
         xmlns:local="clr-namespace:StudentRecords"
         mc:Ignorable="d"
         Title="LogIn" Height="500" Width="250">
-    <Border Background="Black" CornerRadius="20" Margin="10">
-        <StackPanel>
-            <Button Margin="0,20,0.333,0" Height="41" BorderBrush="Black" Background="Black">
-                <StackPanel Orientation="Horizontal" Background="Black" >
-                    <Image Source="H:\Programming\unnamed.png" Height="36" Width="64" RenderTransformOrigin="1.443,0.564" />
-                    <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
+    <Grid>
+        <Border Background="Black" CornerRadius="20" Margin="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black"  Margin="0,20,0.333,0" >
+                    <Button x:Name="button" Margin="4,0,0,0" Width="52" Height="36" Click="button_Click" Foreground="White" BorderBrush="Black" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="H:\Programming\unnamed.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black" />
                 </StackPanel>
-            </Button>
-            <Label Content="Log In" Foreground="White" FontSize="30" HorizontalAlignment="Center" Margin="65,0,65.333,0"/>
-            <Label Content="Username" Foreground="white" FontSize="16" HorizontalAlignment="Center"/>
-            <TextBox x:Name="txtUsername" Background="White" Foreground="white" FontSize="18" Margin="10,0,10.333,0"/>
-            <Label Content="Password" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
-            <PasswordBox x:Name="PasswordBox" Background="White" Foreground="White" FontSize="18" Margin="10,0,10.333,0"/>
-            <Button x:Name="Submit" Content="Submit" Margin="60,10" Background="White" Foreground="Black" FontSize="18" Click="Submit_Click"/>
+                <Label Content="Log In" Foreground="White" FontSize="30" HorizontalAlignment="Center" Margin="60,0,60.2,0" Width="103"/>
+                <Label Content="Username" Foreground="white" FontSize="16" HorizontalAlignment="Center"/>
+                <TextBox x:Name="txtUsername" Background="White" Foreground="Black" FontSize="18" Margin="10,0,10.333,0"/>
+                <Label Content="Password" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
+                <PasswordBox x:Name="PasswordBox1" Background="White" Foreground="Black" FontSize="18" Margin="10,0,10.333,0"/>
+                <Button x:Name="Submit" Content="Submit" Margin="60,10" Background="White" Foreground="Black" FontSize="18" Click="Submit_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
 
-        </StackPanel>
-    </Border>
 </Window>
